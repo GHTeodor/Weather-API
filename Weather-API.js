@@ -18,8 +18,6 @@ const getWeather = (city) => {
         .then(value => {
             weatherInfo.style.display = value ? "flex" : "none";
 
-            console.log(value);
-
             const weatherCondition = value.currentConditions.conditions;
 
             return weatherInfo.innerHTML = `
