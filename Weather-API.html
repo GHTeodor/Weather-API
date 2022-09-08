@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Weather-API.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Weather-API</title>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="wrap">
+
+        <div class="search">
+
+            <h1>The best realtime weather data in one click</h1>
+
+            <form onsubmit="return false">
+                <input type="text" name="city" placeholder="Search for a place" value="L`viv">
+                <button onclick="getWeather(city.value)"><img
+                        src="https://cdn-icons-png.flaticon.com/512/2569/2569888.png"
+                        alt="Search"></button>
+                <b>Mustn't be empty!</b>
+            </form>
+        </div>
+
+        <div id="weatherInfo"></div>
+    </div>
+
+    <div id="oops" onclick="hide()">
+        <img id="oopsIMG"
+             src="https://c7.alamy.com/comp/2H31R58/404-error-page-not-found-sad-kawaii-bunny-and-duckling-with-error-message-cute-little-duck-and-rabbit-apologize-system-maintenance-updates-uploa-2H31R58.jpg"
+             alt="Not found">
+        <p>Oops!
+            <br/>The city wasn't found</p>
+    </div>
+
+</div>
+
+<script src="Weather-API.js"></script>
+</body>
+</html>
