@@ -17,9 +17,16 @@ const getWeather = (city) => {
         })
         .then(value => {
             weatherInfo.style.display = value ? "flex" : "none";
+
             console.log(value);
+
+            const weatherCondition = value.currentConditions.conditions;
+
             return weatherInfo.innerHTML = `
-                <h2>${ value.resolvedAddress }</h2>
+                <span>
+                    <h2> ${ value.resolvedAddress } </h2><pre>   </pre>
+                    <img class="icon" src=${weatherConditionsIcon(weatherCondition)} alt=${weatherCondition}>
+                </span>
                 <hr/>
                 <sup>${ dayOfTheWeak }</sup>
                 <sub>${ value.currentConditions.datetime }</sub>
@@ -27,7 +34,7 @@ const getWeather = (city) => {
                 <hr/>    
                 <ul>
                     <li>Temperature: ${ convertFahrenheitToCelsius(value.currentConditions.temp) }°С</li>
-                    <li>Conditions: ${ value.currentConditions.conditions }</li>
+                    <li>Conditions: ${ weatherCondition }</li>
                     <li>Feels like: ${ convertFahrenheitToCelsius(value.currentConditions.feelslike) }°С</li>
                     <li>Sunrise: ${ value.currentConditions.sunrise }</li>
                     <li>Sunset: ${ value.currentConditions.sunset }</li>
@@ -37,6 +44,15 @@ const getWeather = (city) => {
                 </ul>
             `
         });
+};
+
+const weatherConditionsIcon = (condition) => {
+    if (condition === "Overcast") return "https://cdn-icons-png.flaticon.com/128/1146/1146881.png";
+    else if (condition === "Clear") return "https://cdn-icons-png.flaticon.com/128/8030/8030072.png";
+    else if (condition === "Partially cloudy") return "https://cdn-icons-gif.flaticon.com/6455/6455024.gif";
+    else if (condition === "Rain") return "https://cdn-icons-gif.flaticon.com/6455/6455054.gif";
+    else if (condition === "Snow") return "https://cdn-icons-gif.flaticon.com/6454/6454998.gif";
+    else return "https://cdn-icons-png.flaticon.com/128/648/648198.png"
 };
 
 const hide = () => {

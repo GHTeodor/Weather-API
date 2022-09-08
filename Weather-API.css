@@ -129,3 +129,13 @@ button:hover {
     scale: .9;
     transition-duration: 1s;
 }
+
+.icon {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+span {
+    display: flex;
+    flex-wrap: wrap;
+}
