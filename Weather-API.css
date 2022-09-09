@@ -23,6 +23,7 @@ body {
     height: 100%;
     position: absolute;
 }
+
 .wrap > .search {
     max-width: 50%;
 }
@@ -49,7 +50,7 @@ p {
 }
 
 h1:hover {
-    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,105,1) 35%, rgba(55,0,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 105, 1) 35%, rgba(55, 0, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -67,6 +68,7 @@ form {
 input {
     width: 200px;
 }
+
 input, button {
     opacity: 0.7;
     background-color: lightcyan;
