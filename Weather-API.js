@@ -49,17 +49,17 @@ const getWeather = async (city) => {
 const weatherConditionsIcon = (condition) => {
     switch (condition) {
         case "Overcast":
-            return "https://cdn-icons-png.flaticon.com/128/1146/1146881.png";
+            return "./images/overcast.png";
         case "Clear":
-            return "https://cdn-icons-png.flaticon.com/128/8030/8030072.png";
+            return "./images/clear.png";
         case "Partially cloudy":
-            return "https://cdn-icons-gif.flaticon.com/6455/6455024.gif";
+            return "./images/partiallyCloudy.gif";
         case "Rain":
-            return "https://cdn-icons-gif.flaticon.com/6455/6455054.gif";
+            return "./images/rain.gif";
         case "Snow":
-            return "https://cdn-icons-gif.flaticon.com/6454/6454998.gif";
+            return "./images/snow.gif";
         default:
-            return "https://cdn-icons-png.flaticon.com/128/648/648198.png";
+            return "./images/defaultWeather.png";
     }
 };
 

@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-    background: url("https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?w=1060&t=st=1662674565~exp=1662675165~hmac=52c3fa7c67c923c0a66047c70661b46d04aabce48cf0a8feb1da3f8e175d3209") no-repeat center center fixed;
+    background: url("./images/background-image.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
