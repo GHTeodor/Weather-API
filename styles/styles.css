@@ -15,9 +15,9 @@ body .wrapper {
 }
 body .wrapper .wrap {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100%;
   position: absolute;
 }

@@ -1,7 +1,11 @@
-body {
+@mixin d-flex_jc-c_ai-c {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  @include d-flex_jc-c_ai-c;
   margin: 0;
 
   .wrapper {
@@ -14,10 +18,8 @@ body {
     height: 100vh;
 
     .wrap {
-      display: flex;
+      @include d-flex_jc-c_ai-c;
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
       height: 100%;
       position: absolute;
 
