@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+body .wrapper {
+  background: url(".././images/background-image.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+body .wrapper .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+}
+body .wrapper .wrap > .search {
+  max-width: 50%;
+}
+body .wrapper .wrap > .search h1:hover {
+  background: -webkit-linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(121, 9, 105) 35%, rgb(55, 0, 255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .wrapper .wrap > .search form {
+  display: flex;
+  align-items: stretch;
+}
+body .wrapper .wrap > .search form b:last-child {
+  display: none;
+  color: red;
+  background-color: black;
+  opacity: 0.9;
+}
+body .wrapper .wrap > .search form input {
+  width: 200px;
+}
+body .wrapper .wrap > .search form button > img {
+  max-width: 20px;
+  max-height: 20px;
+}
+body .wrapper .wrap > .search form input, body .wrapper .wrap > .search form button {
+  opacity: 0.7;
+  background-color: lightcyan;
+}
+body .wrapper .wrap > .search form input:focus {
+  width: 300px;
+  transition-duration: 1s;
+}
+body .wrapper .wrap > .search form button:hover {
+  scale: 1.1;
+  margin-left: 2px;
+  transition-duration: 1s;
+}
+body .wrapper .wrap .search, body .wrapper .wrap #weatherInfo {
+  margin: auto;
+}
+body .wrapper .wrap #weatherInfo {
+  flex-direction: column;
+  background-color: cornflowerblue;
+  opacity: 0.8;
+}
+body .wrapper .wrap #weatherInfo span {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .wrapper .wrap #weatherInfo span .icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+body .wrapper .wrap #weatherInfo:hover {
+  transition-duration: 1s;
+  scale: 1.1;
+}
+body .wrapper .wrap hr {
+  width: 100%;
+  background-color: blueviolet;
+}
+body .wrapper h1, body .wrapper p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+body .wrapper p {
+  text-align: center;
+}
+body .wrapper #oops, body .wrapper #weatherInfo {
+  border: double blueviolet 5px;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+  flex-wrap: wrap;
+}
+body .wrapper #oops {
+  background-color: palevioletred;
+  opacity: 0.8;
+  position: fixed;
+  left: calc(50% - 200px);
+  justify-content: space-between;
+  bottom: 10px;
+}
+body .wrapper #oops img {
+  margin: auto;
+  max-width: 200px;
+}
+body .wrapper #oops p {
+  margin: auto;
+  color: black;
+}
+body .wrapper #oops:hover {
+  scale: 0.9;
+  transition-duration: 1s;
+}
+
+/*# sourceMappingURL=styles.css.map */
